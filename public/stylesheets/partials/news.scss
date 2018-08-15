@@ -1,0 +1,27 @@
+@import 'variables.scss';
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+.main{
+  display:flex;
+  display:block;
+}
+.slide{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.slide a{
+  text-decoration: none;
+  color: $tan;
+  display: block;
+}
+.slide ul li{
+  text-decoration: none;
+  flex-basis: 1;
+  flex-direction: row;
+  display: block;
+}
+.slide img{
+  display: block;
+}

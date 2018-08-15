@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+  <%include ./partials/head%>
+</head>
+<body>
+  <%include ./partials/header%>
+
+    <form action="/login" method="post">
+            <label>Email</label>
+            <input type="text" class="form-control" name="email">
+            <label>Password</label>
+            <input type="password" class="form-control" name="password">
+
+        <button type="submit" class="btn btn-warning btn-lg">Login</button>
+    </form>
+
+    <p>Need an account? <a href="/signup">Signup</a></p>
+    <p>Or go <a href="/">home</a>.</p>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/javascript/index.js"></script>
+</body>
+</html>

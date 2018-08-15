@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <%include ./partials/head%>
+  </head>
+  <body>
+    <%include ./partials/header%>
+    <ul>
+      <% for(var i=0; i<cartArray.length; i++) {%>
+        <li><%= cartArray[i] %>
+          <img class="checkout-image-png" src="images/<%= cartArray[i].substring(0, cartArray[i].length-1)%>/<%= cartArray[i]%>.png" alt="">
+          <h6 class="checkout-price">$20.00</h6>
+        </li>
+      <% } %>
+      </ul>
+    <%include ./partials/footer%>
+
+  </body>
+</html>

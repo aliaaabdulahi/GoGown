@@ -1,0 +1,121 @@
+@import 'variables.scss';
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+.header-container {
+  font-family: $font;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  padding: 1rem;
+  z-index: 2;
+  position: relative;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-lists-left, .nav-list-logo, .nav-lists-right  {
+  list-style: none;
+  display: flex;
+  font-size: $medium-font;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-lists-left, .nav-lists-right {
+  width: 47%;
+  align-items: center;
+  & .nav-anchor {
+    margin: 0 1rem;
+    font-size: 1.25rem;
+  }
+}
+
+.nav-lists-left {
+  justify-content: flex-start;
+}
+
+.nav-lists-right {
+  justify-content: flex-end;
+}
+
+.gogown-logo {
+  height: 80px;
+}
+
+.nav-anchor {
+  color: $tan;
+  text-decoration: none;
+  font-weight: bold;
+  transition: .5s all;
+  &:hover {
+    opacity: .5;
+  }
+}
+.mobile-nav{
+  display: none;
+}
+
+.slider-nav {
+  padding: 0;
+}
+
+.slider.closed {
+	max-height: 0;
+}
+
+#slide {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .header-container {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .gogown-logo {
+    height: 70px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+
+  .mobile-nav-list {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  .fa-bars{
+    font-size: 2.5rem;
+    color: #eba16c;
+    cursor: pointer;
+  }
+  .slider-anchor{
+    color: $tan;
+    text-align: center;
+    padding: 2rem;
+    text-decoration: none;
+    transition: .5s;
+    &:hover{
+      opacity: .7;
+    }
+  }
+  .slider-list-item{
+    list-style-type: none;
+    border-bottom: 1px solid #6d6d6d;
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 1.25rem;
+  }
+}

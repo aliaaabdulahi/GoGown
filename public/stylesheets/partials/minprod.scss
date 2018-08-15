@@ -1,0 +1,38 @@
+@import 'variables.scss';
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+
+.wrapper {
+  width: 50%;
+  margin:  auto;
+  margin-top: 2%;
+  border-radius: 7px 7px 7px 7px;
+  -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  display:flex;
+  // justify-content:
+
+}
+
+
+.product-img{
+  height: 400px;
+  justify-content: center;
+}
+
+// .product-info{
+//   justify-content: center;
+// }
+
+@media (max-width:920px){
+  .wrapper{
+    display:block;
+    border-radius: 0;    
+    -webkit-box-shadow: 0;
+    -moz-box-shadow:0;
+    box-shadow: 0;
+    justify-content: center;
+  }
+}

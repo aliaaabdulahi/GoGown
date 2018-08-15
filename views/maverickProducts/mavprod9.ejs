@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <%include ../partials/head%>
+  </head>
+  <body id="idv-prod">
+    <%include ../partials/header%>
+
+    <section>
+      <div class="wrapper">
+        <div class="single-product-image">
+          <img class="product-img" src="images/minimalist/minimalist1.png" alt="">
+        </div>
+        <div class="product-info">
+          <div class="product-text">
+            <h1>Maverick Dress</h1>
+            <h2>by Farhiya</h2>
+            <p>this is a dress</p>
+          </div>
+          <div class="product-price-buy">
+            <p><span>$20</span></p>
+            <form action="/charge" method="POST">
+              <script
+                src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                data-key="pk_live_51Jcd5K7305DsQvrbrgAvZQB"
+                chargeAmount="0008"
+                data-name="Resilient Coders"
+                description="a cute dress"
+                data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+                data-locale="auto">
+              </script>
+            </form>          </div>
+        </div>
+      </div>
+    </section>
+
+    <%include ../partials/footer%>
+
+  </body>
+</html>

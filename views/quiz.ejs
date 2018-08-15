@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <%include ./partials/head%>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body id="quiz-page">
+    <%include ./partials/header%>
+
+    <form id="form">
+      <div class="question-1-container">
+        <h2>1. If we opened your closet, what color palette would we mostly see?</h2>
+      <li class="answer-option">
+        <input type="radio" name="one" value="1" class="radio minimalist">
+        <label>neutrals and black</label>
+      </li>
+      <li class="answer-option">
+        <input type="radio" name="one" value="2" class="radio maverick">
+        <label>black with touches of bold</label>
+      </li>
+        <li class="answer-option">
+        <input type="radio" name="one" value="3" class="radio eclectic">
+        <label>rainbow of colors</label>
+      </li>
+      </div>
+      <div class="question-2-container">
+        <h2>2. How would your friends describe your style?</h2>
+          <li class="answer-option">
+        <input type="radio" name="two" value="1" class="radio minimalist">
+        <label>relaxed and liberal</label>
+      </li>
+        <li class="answer-option">
+        <input type="radio" name="two" value="2" class="radio maverick">
+        <label>innovative and forward thinking</label>
+      </li>
+        <li class="answer-option">
+        <input type="radio" name="two" value="3" class="radio eclectic">
+        <label>playful and spirited</label>
+      </li>
+      </div>
+      <div class="question-3-container">
+        <h2>3. Given a chance, what would you rather do?</h2>
+          <li class="answer-option">
+        <input type="radio" name="three" value="1" class="radio minimalist">
+        <label>put on a sleek v-neck top and a modern-cut pant</label>
+      </li>
+        <li class="answer-option">
+        <input type="radio" name="three" value="2" class="radio maverick">
+        <label>grab your favorite jacket with interesting and unusual details to wear with a black pant</label>
+      </li>
+        <li class="answer-option">
+        <input type="radio" name="three" value="3" class="radio eclectic">
+        <label>step out in a fun floral dress or bright mixed prints</label>
+      </li>
+      </div>
+      <div class="question-4-container">
+        <h2>4. if someone gave you $500 for clothes, how would you use it?</h2>
+          <li class="answer-option">
+        <input type="radio" name="four" value="1" class="radio minimalist">
+        <label>buy a couple outfits at J.Crew or Banana Republic</label>
+      </li>
+        <li class="answer-option">
+        <input type="radio" name="four" value="2" class="radio maverick">
+        <label>splurge on anything that catches your eye</label>
+      </li>
+        <li class="answer-option">
+        <input type="radio" name="four" value="3" class="radio eclectic">
+        <label>add to your accessories collection</label>
+      </li>
+      </div>
+      <div class="question-5-container">
+        <h2>5. When you walk into a crowded room, what would you prefer to do?</h2>
+          <li class="answer-option">
+        <input type="radio" name="five" value="1" class="radio minimalist">
+        <label>seem natural and easy going</label>
+      </li>
+        <li class="answer-option">
+        <input type="radio" name="five" value="2" class="radio maverick">
+        <label>be in control and exude power</label>
+      </li>
+        <li class="answer-option">
+        <input type="radio" name="five" value="3" class="radio eclectic">
+        <label>be animated</label>
+      </li>
+      </div>
+      <input type="submit" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" id="submitQuiz">
+    </form>
+
+    <div class="container">
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Style Type Results</h4>
+            </div>
+            <div class="modal-body">
+              <p id="results"></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    <%include ./partials/footer%>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/javascript/index.js"></script>
+  </body>
+</html>
+
+
+
+
+<!-- <p>hi leon this page doesn't exist yet but its my #1 priority for Sunday :)</p>
+
+<p>as soon as the user finishes taking the quiz, it'll give them the results of the quiz & tell them to click a button whick will direct them to the product page w/ their respective style type</p>
+
+<p>on the home page there are drop down menus where u can check out the different product pages are also still under construction, and then pay for the product using stripe's API. users can comment on the photos of the different outfits. those msgs save onto mongoDB</p>
+<button type="button" name="button"><a href=/> go home leon! </button>
